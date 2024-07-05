@@ -30,7 +30,7 @@ const EditProductForm = () => {
     formData.append("price", values.price);
     formData.append("quantity", values.quantity);
     formData.append("description", values.description);
-    formData.append("image", values.image);
+    formData.append("Image", values.image);
     setIsSubmitting(true);
     try {
       const response = await instance.put(
