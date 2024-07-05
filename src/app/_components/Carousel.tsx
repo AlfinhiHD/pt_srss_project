@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { CSSProperties, useState } from "react";
 import useSWR from "swr";
 import { baseAPI } from "../../../constant/apis";
 import axios from "axios";
+import { BarLoader } from "react-spinners";
 
 const fetcher = (url) => axios.get(url).then((res) => res.data);
 
+const override: CSSProperties = {
+  display: "block",
+  margin: "0 auto",
+  borderColor: "red",
+};
+
 export default function Carousel() {
-  const { data, error } = useSWR(`${baseAPI}/product`, fetcher);
+  const { data, error, isLoading } = useSWR(`${baseAPI}/product`, fetcher);
   const [index, setIndex] = useState(0);
 
   const products = data?.data || [];
   const itemsPerPage = 4;
+
 
   const handleNext = () => {
     setIndex((prevIndex) => {
@@ -22,11 +30,21 @@ export default function Carousel() {
   const handlePrev = () => {
     setIndex((prevIndex) => {
       const newIndex = prevIndex - itemsPerPage;
-      return newIndex < 0 ? Math.max(products.length - itemsPerPage, 0) : newIndex;
+      return newIndex < 0
+        ? Math.max(products.length - itemsPerPage, 0)
+        : newIndex;
     });
   };
 
-  const visibleProducts = products.slice(index, index + itemsPerPage);
+  if (isLoading)
+    return (
+      <BarLoader
+        cssOverride={override}
+        width={100}
+        color={"#123abc"}
+        loading={true}
+      />
+    );
 
   return (
     <div className="relative w-full max-w-5xl mx-auto">

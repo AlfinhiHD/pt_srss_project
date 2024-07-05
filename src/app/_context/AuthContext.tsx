@@ -29,7 +29,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     if (
       !token &&
       pathname.split("/")[1] !== "landing" &&
-      pathname.split("/")[1] !== "register"
+      pathname.split("/")[1] !== "register" &&
+      pathname.split("/")[1] !== ""
     ) {
       router.push("/login");
     } else {
