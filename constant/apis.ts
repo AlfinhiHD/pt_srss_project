@@ -1,0 +1,1 @@
+export const baseAPI = "https://doubtful-leoine-upnveteran-71c2c91d.koyeb.app"

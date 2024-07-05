@@ -1,0 +1,51 @@
+export const mockProducts = [
+    {
+      id: "1",
+      image: "http://res.cloudinary.com/dxxohpu99/image/upload/v1719764076/dfd_1.jpg.jpg",
+      product_name: "Product 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      quantity: 10,
+      price: 100000,
+    },
+    {
+      id: "2",
+      image: "http://res.cloudinary.com/dxxohpu99/image/upload/v1719764076/dfd_1.jpg.jpg",
+      product_name: "Product 2",
+      description: "Ut enim ad minim veniam, quis nostrud exercitation.",
+      quantity: 5,
+      price: 85000,
+    },
+    {
+      id: "3",
+      image: "http://res.cloudinary.com/dxxohpu99/image/upload/v1719764076/dfd_1.jpg.jpg",
+      product_name: "Product 3",
+      description: "Duis aute irure dolor in reprehenderit in voluptate.",
+      quantity: 8,
+      price: 120000,
+    },
+    {
+      id: "4",
+      image: "http://res.cloudinary.com/dxxohpu99/image/upload/v1719764076/dfd_1.jpg.jpg",
+      product_name: "Product 4",
+      description: "Velit esse cillum dolore eu fugiat nulla pariatur.",
+      quantity: 12,
+      price: 75000,
+    },
+    {
+      id: "5",
+      image: "http://res.cloudinary.com/dxxohpu99/image/upload/v1719764076/dfd_1.jpg.jpg",
+      product_name: "Product 5",
+      description: "Excepteur sint occaecat cupidatat non proident.",
+      quantity: 6,
+      price: 98000,
+    },
+    {
+      id: "6",
+      image: "http://res.cloudinary.com/dxxohpu99/image/upload/v1719764076/dfd_1.jpg.jpg",
+      product_name: "Product 6",
+      description: "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      quantity: 4,
+      price: 110000,
+    },
+  ];
+  
