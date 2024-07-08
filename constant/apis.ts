@@ -1,1 +1,1 @@
-export const baseAPI = "http://spicy-swordfish-upnveteranyokyakarta-e1eafdff.koyeb.app"
+export const baseAPI = "https://prospective-ulrike-upnveteranyokyakarta-da74cda5.koyeb.app"
