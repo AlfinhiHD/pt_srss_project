@@ -90,7 +90,7 @@ export default function Home() {
             Semarang, Jawa Tengah 50123
           </p>
           <a
-            href="https://maps.app.goo.gl/2HrmD33RnWzLcwXt5"
+            href="https://maps.app.goo.gl/JWfNhNuhBSt5vb3A9"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-200 hover:bg-blue-400 text-black py-2 px-4 rounded-lg transition duration-300 ease-in-out inline-block mt-4"
